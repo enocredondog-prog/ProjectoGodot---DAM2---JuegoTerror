@@ -1,0 +1,92 @@
+[gd_scene format=3 uid="uid://cauexj8t3mjyd"]
+
+[ext_resource type="Script" uid="uid://dta4ls47cgn7b" path="res://monitor.gd" id="1_mjpe0"]
+
+[node name="Monitor" type="Node2D" unique_id=897192818 node_paths=PackedStringArray("pantalla", "capa_ani1", "capa_ani2", "botones")]
+script = ExtResource("1_mjpe0")
+pantalla = NodePath("Pantalla")
+capa_ani1 = NodePath("CapaAni1")
+capa_ani2 = NodePath("CapaAni2")
+botones = [NodePath("Pantalla/Button"), NodePath("Pantalla/Button2"), NodePath("Pantalla/Button3"), NodePath("Pantalla/Button4"), NodePath("Pantalla/Button5"), NodePath("Pantalla/Button6"), NodePath("Pantalla/Button7"), NodePath("Pantalla/Button8")]
+
+[node name="Pantalla" type="TextureRect" parent="." unique_id=1380094491]
+offset_right = 1281.0
+offset_bottom = 720.0
+
+[node name="Button8" type="Button" parent="Pantalla" unique_id=253599154]
+layout_mode = 0
+offset_left = 1136.0
+offset_top = 592.0
+offset_right = 1213.0
+offset_bottom = 659.0
+text = "TU"
+
+[node name="Button6" type="Button" parent="Pantalla" unique_id=404168775]
+layout_mode = 0
+offset_left = 1079.0
+offset_top = 534.0
+offset_right = 1135.0
+offset_bottom = 590.0
+text = "CAM6"
+
+[node name="Button7" type="Button" parent="Pantalla" unique_id=923071530]
+layout_mode = 0
+offset_left = 1016.0
+offset_top = 474.0
+offset_right = 1072.0
+offset_bottom = 530.0
+text = "CAM7"
+
+[node name="Button5" type="Button" parent="Pantalla" unique_id=209489439]
+layout_mode = 0
+offset_left = 1080.0
+offset_top = 474.0
+offset_right = 1136.0
+offset_bottom = 530.0
+text = "CAM5"
+
+[node name="Button3" type="Button" parent="Pantalla" unique_id=163505183]
+layout_mode = 0
+offset_left = 1210.0
+offset_top = 473.0
+offset_right = 1266.0
+offset_bottom = 529.0
+text = "CAM3"
+
+[node name="Button" type="Button" parent="Pantalla" unique_id=81557881]
+layout_mode = 0
+offset_left = 1143.0
+offset_top = 411.0
+offset_right = 1199.0
+offset_bottom = 467.0
+text = "CAM1"
+
+[node name="Button2" type="Button" parent="Pantalla" unique_id=1514631262]
+layout_mode = 0
+offset_left = 1143.0
+offset_top = 473.0
+offset_right = 1199.0
+offset_bottom = 529.0
+text = "CAM2"
+
+[node name="Button4" type="Button" parent="Pantalla" unique_id=1520205407]
+layout_mode = 0
+offset_left = 1210.0
+offset_top = 533.0
+offset_right = 1266.0
+offset_bottom = 589.0
+text = "CAM4"
+
+[node name="CapaAni1" type="TextureRect" parent="." unique_id=1818576588]
+offset_left = 375.09
+offset_top = 326.0
+offset_right = 513.0901
+offset_bottom = 508.0
+rotation = 0.13264503
+scale = Vector2(0.4, 0.4)
+
+[node name="CapaAni2" type="TextureRect" parent="." unique_id=989773640]
+offset_left = 839.0
+offset_top = 138.0
+offset_right = 977.0
+offset_bottom = 320.0

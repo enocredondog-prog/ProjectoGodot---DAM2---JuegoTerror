@@ -1,0 +1,123 @@
+[gd_scene format=3 uid="uid://cj1dlbksuvwhj"]
+
+[ext_resource type="Texture2D" uid="uid://cgad2vevjmjdk" path="res://Mapa/Gemini_Generated_Image_z012aiz012aiz012.jpg" id="1_ig7tw"]
+[ext_resource type="Script" uid="uid://oonty4t4ex5j" path="res://camera_2d.gd" id="2_0xm2m"]
+[ext_resource type="Script" uid="uid://6wyxdqqj67w" path="res://Puertas.gd" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://cauexj8t3mjyd" path="res://monitor.tscn" id="3_1bvp3"]
+[ext_resource type="Texture2D" uid="uid://dc0h3q18b7if0" path="res://Mapa/Gemini_Generated_Image_gm73legm73legm73.jpg" id="5_dg77c"]
+[ext_resource type="Script" uid="uid://cc8pj4jaqucb8" path="res://controlador_ia.gd" id="5_lquwl"]
+[ext_resource type="Texture2D" uid="uid://bc8342jc28d1l" path="res://Mapa/Gemini_Generated_Image_wojvgdwojvgdwojv.jpg" id="6_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://ciha5kimctjyu" path="res://Mapa/Gemini_Generated_Image_5qg7465qg7465qg7.jpg" id="7_w48qg"]
+[ext_resource type="Texture2D" uid="uid://uea60j66jhjr" path="res://Mapa/Gemini_Generated_Image_aijqxcaijqxcaijq.jpg" id="8_vivmo"]
+[ext_resource type="Texture2D" uid="uid://5ierileh454x" path="res://Mapa/Gemini_Generated_Image_ukkt1iukkt1iukkt.jpg" id="9_2cqfq"]
+[ext_resource type="Texture2D" uid="uid://0l35ynmbqlic" path="res://Mapa/Gemini_Generated_Image_2ujo3j2ujo3j2ujo.jpg" id="10_yaehf"]
+[ext_resource type="Texture2D" uid="uid://dfp8mlkc37oyl" path="res://Mapa/Gemini_Generated_Image_9y5ap89y5ap89y5a.jpg" id="11_074og"]
+[ext_resource type="Texture2D" uid="uid://cigb7l6n4sevi" path="res://Personajes/goku/Goku_FnF.webp" id="12_ycdy4"]
+[ext_resource type="Texture2D" uid="uid://cwy4c7mvcm0nj" path="res://Personajes/goku/Son_Goku_en_Super_Hero.webp" id="13_vivmo"]
+[ext_resource type="Texture2D" uid="uid://cs7xl55fyn3hv" path="res://Personajes/goku/Goku_dbz_fin-0.webp" id="14_2cqfq"]
+
+[sub_resource type="GDScript" id="GDScript_h2yge"]
+script/source = "extends ColorRect
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready() -> void:
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta: float) -> void:
+	pass
+"
+
+[node name="Main" type="Node2D" unique_id=116311879]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=500523653 node_paths=PackedStringArray("boton_1", "polygon_1a", "polygon_1b", "boton_3", "polygon_3", "boton_2", "polygon_2a", "polygon_2b", "boton_4", "polygon_4", "barra_inferior", "escena_monitor")]
+modulate = Color(0.74558026, 0.7455802, 0.7455802, 1)
+position = Vector2(640.50006, 361)
+scale = Vector2(0.93846154, 0.9401042)
+texture = ExtResource("1_ig7tw")
+script = ExtResource("2_h2yge")
+boton_1 = NodePath("Button")
+polygon_1a = NodePath("Puerta_I")
+polygon_1b = NodePath("Puerta_IM")
+boton_3 = NodePath("Button3")
+polygon_3 = NodePath("Puerta_I")
+boton_2 = NodePath("Button2")
+polygon_2a = NodePath("Puerta_D")
+polygon_2b = NodePath("Puerta_DM")
+boton_4 = NodePath("Button4")
+polygon_4 = NodePath("Puerta_D")
+barra_inferior = NodePath("../CanvasLayer/ColorRect")
+escena_monitor = NodePath("../CanvasLayer/Monitor")
+
+[node name="Puerta_I" type="Polygon2D" parent="Sprite2D" unique_id=1668137261]
+position = Vector2(10.747009, 0)
+scale = Vector2(1.0254776, 1)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-596.0026, -285.7812, -433.67188, -205.31277, -421.8229, 379.2665, -607.85156, 379.2665)
+
+[node name="Puerta_IM" type="Polygon2D" parent="Sprite2D" unique_id=138748517]
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(-370.28693, -173.38504, -292.50006, -136.15514, -292.50006, 104.243744, -370.28693, 125.518005)
+
+[node name="Puerta_D" type="Polygon2D" parent="Sprite2D" unique_id=1672082166]
+position = Vector2(-22.800262, 4.9737854)
+scale = Vector2(1.0547942, 1.0179152)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(566.3525, -277.6288, 416.1065, -204.2327, 420.36884, 366.9806, 493.89337, 372.29913, 568.4836, 375.4903, 571.68036, 57.8132)
+
+[node name="Puerta_DM" type="Polygon2D" parent="Sprite2D" unique_id=597302181]
+position = Vector2(-20.191925, 1.8201294)
+scale = Vector2(1.072464, 1.0111111)
+color = Color(0, 0, 0, 1)
+polygon = PackedVector2Array(348.1978, -153.2914, 289.57684, -126.99083, 289.57684, 97.09, 345.21704, 113.92236)
+
+[node name="Button" type="Button" parent="Sprite2D" unique_id=792984944]
+offset_left = -682.50006
+offset_top = -39.357338
+offset_right = -599.3771
+offset_bottom = 49.484764
+
+[node name="Button2" type="Button" parent="Sprite2D" unique_id=1905075008]
+offset_left = 568.48346
+offset_top = -46.803318
+offset_right = 653.1966
+offset_bottom = 44.6759
+
+[node name="Button3" type="Button" parent="Sprite2D" unique_id=1722907197]
+offset_left = -669.71313
+offset_top = 72.3324
+offset_right = -590.8606
+offset_bottom = 157.98337
+
+[node name="Button4" type="Button" parent="Sprite2D" unique_id=1394068234]
+offset_left = 566.3524
+offset_top = 78.71469
+offset_right = 649.99994
+offset_bottom = 169.6842
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=256532609 node_paths=PackedStringArray("monitor")]
+position = Vector2(640, 360)
+zoom = Vector2(2, 1)
+script = ExtResource("2_0xm2m")
+monitor = NodePath("../CanvasLayer/Monitor")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=1408962927]
+
+[node name="Monitor" parent="CanvasLayer" unique_id=897192818 node_paths=PackedStringArray("ia_controlador") instance=ExtResource("3_1bvp3")]
+ia_controlador = NodePath("../../ControladorIA")
+img_vacias = Array[Texture2D]([ExtResource("5_dg77c"), ExtResource("6_ycdy4"), ExtResource("7_w48qg"), ExtResource("8_vivmo"), ExtResource("9_2cqfq"), ExtResource("10_yaehf"), ExtResource("11_074og")])
+img_ani1 = Array[Texture2D]([ExtResource("12_ycdy4"), ExtResource("13_vivmo"), null, null, ExtResource("14_2cqfq"), ExtResource("12_ycdy4"), ExtResource("13_vivmo")])
+pos_ani1 = Array[Vector2]([Vector2(550, 200)])
+
+[node name="ColorRect" type="ColorRect" parent="CanvasLayer" unique_id=2072865291]
+offset_left = 448.99997
+offset_top = 682.0
+offset_right = 843.2623
+offset_bottom = 722.0
+script = SubResource("GDScript_h2yge")
+
+[node name="ControladorIA" type="Node" parent="." unique_id=277218237 node_paths=PackedStringArray("monitor")]
+script = ExtResource("5_lquwl")
+monitor = NodePath("../CanvasLayer/Monitor")
